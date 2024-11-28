@@ -1,0 +1,260 @@
+* {
+	box-sizing: border-box;
+}
+
+.container {
+	background-color: #f1f3f5;
+	display: flex;
+	margin: 10rem;
+	padding: 10rem 8rem;
+	width: 100%;
+	margin: 0 auto;
+	transform: translate(0%, 10%);
+}
+
+.container--- {
+	/* display: grid; */
+	width: 50%;
+	transform: translate(20%, -0%);
+}
+
+h1 {
+	color: #4263eb;
+	font-size: 4rem;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p {
+	font-size: 2rem;
+	width: 75%;
+}
+
+form {
+	border: 1px solid #dee2e6;
+	width: 60%;
+	/* margin: 0 auto; */
+	/* padding: 1rem 1.5rem; */
+	border: none;
+	box-shadow: 0px 0px 7px 0px #868e96;
+	border-radius: 10px;
+	background-color: #f8f9fa;
+	padding: 4rem -2.5rem;
+}
+
+label {
+	display: grid;
+	place-items: center;
+}
+
+h2 {
+	color: #343a40;
+	text-align: center;
+	font-weight: 400;
+	margin-top: 1rem;
+	padding-top: 1rem;
+}
+
+.input-em,
+.input-pa {
+	font-size: 1rem;
+	border-color: #dee2e6;
+	margin-bottom: 1rem;
+	width: 90%;
+	padding: 1rem;
+	border-top: none;
+	border-left: none;
+	border-radius: 8px;
+}
+
+.button-container {
+	display: grid;
+	place-items: center;
+}
+
+.btn-login {
+	padding: 1rem 0.5rem;
+	width: 90%;
+	background-color: #4263eb;
+	color: #f1f3f5;
+	font-size: 1rem;
+	font-weight: 800;
+	border: none;
+	border-radius: 8px;
+	margin-bottom: 1.2rem;
+	box-shadow: 1px 1px 4px 1px grey;
+}
+
+.btn-forget {
+	border: none;
+	color: #4c6ef5;
+	background-color: #f8f9fa;
+	margin-bottom: 0.5rem;
+	font-weight: 550;
+}
+
+.create-section {
+	display: grid;
+	place-items: center;
+}
+
+span {
+	font-size: 1rem;
+	color: #adb5bd;
+	margin-bottom: 0.8rem;
+}
+
+.btn-create {
+	padding: 1rem 1.5rem;
+	background-color: #40c057;
+	border-radius: 8px;
+	border: none;
+	color: #f1f3f5;
+	font-weight: 500;
+	font-size: 1rem;
+	width: 50%;
+	margin-bottom: 1rem;
+}
+
+.fotter-section {
+	display: flex;
+	gap: 1rem;
+	border-bottom: 1px solid #adb5bd;
+	padding-top: 10rem;
+	justify-items: center;
+}
+
+.span-icon {
+	height: 1.5rem;
+	width: 2rem;
+	border: 2px solid #adb5bd;
+}
+.btn-login:active,
+.btn-login:hover {
+	color: #edf2ff;
+}
+/* Media Queries for responsive design */
+@media (max-width: 1200px) {
+	.container {
+		margin: 5rem;
+		padding: 5rem 6rem;
+		transform: translate(0%, 5%);
+	}
+
+	form {
+		width: 70%;
+		padding: 3rem 1rem;
+	}
+
+	h1 {
+		font-size: 3rem;
+	}
+
+	p {
+		font-size: 1.8rem;
+		width: 80%;
+	}
+
+	.btn-login {
+		width: 85%;
+	}
+
+	.btn-create {
+		width: 60%;
+	}
+}
+
+@media (max-width: 768px) {
+	.container {
+		flex-direction: column;
+		margin: 3rem;
+		padding: 3rem 4rem;
+		transform: translate(0%, 0%);
+	}
+
+	.container--- {
+		width: 80%;
+		transform: translate(0%, 0%);
+	}
+
+	h1 {
+		font-size: 2.5rem;
+		text-align: center;
+	}
+
+	p {
+		font-size: 1.6rem;
+		width: 100%;
+	}
+
+	form {
+		width: 90%;
+		padding: 2rem;
+	}
+
+	.input-em,
+	.input-pa {
+		width: 100%;
+	}
+
+	.btn-login {
+		width: 100%;
+	}
+
+	.btn-create {
+		width: 70%;
+	}
+
+	.fotter-section {
+		flex-direction: column;
+		padding-top: 3rem;
+	}
+
+	.span-icon {
+		width: 1.5rem;
+		height: 1.5rem;
+	}
+}
+
+@media (max-width: 480px) {
+	.container {
+		margin: 2rem;
+		padding: 2rem 3rem;
+	}
+
+	h1 {
+		font-size: 2rem;
+	}
+
+	p {
+		font-size: 1.4rem;
+	}
+
+	form {
+		width: 100%;
+		padding: 2rem 1rem;
+	}
+
+	.input-em,
+	.input-pa {
+		width: 100%;
+		padding: 0.8rem;
+	}
+
+	.btn-login {
+		width: 100%;
+	}
+
+	.btn-create {
+		width: 80%;
+	}
+
+	.fotter-section {
+		flex-direction: column;
+		padding-top: 2rem;
+	}
+
+	.span-icon {
+		width: 1.2rem;
+		height: 1.2rem;
+	}
+}
